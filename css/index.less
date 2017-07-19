@@ -1,0 +1,134 @@
+//size
+//com
+@allWidth:100%;
+@allHeight:100%;
+.boxSizing{
+    -webkit-box-sizing: border-box;
+    box-sizing:border-box;
+}
+.mixinPadding (...) {
+    padding:@arguments;
+}
+.mixinMargin (...) {
+    margin:@arguments;
+}
+//menu
+@menuHeight:204px;
+//discount
+@discounttitleHeight:35px;
+@morebarHeight:52px;
+
+
+//The section for color
+@discounttitleColor:#ff9000;
+@morebarColor:#F4F4F4;
+
+//menu 
+ .showall{
+             height:@menuHeight;
+             overflow:hidden;
+             .boxSizing();
+         }
+.menu{   
+     .mixinPadding (6px 0px);
+    .row{      
+            .mixinMargin(16px 0px);
+        .col-sm-3{
+            text-align:center; 
+            .mixinMargin(0px 0px 10px 0px);                 
+           a{
+                display:block;
+                width:@allWidth;
+                height:@allHeight;
+                text-align:center;
+                img{
+                     width:50px;
+                     .mixinMargin(0px 0px 4px 0px); 
+                }
+            }        
+    }  
+  }
+}
+//discount
+//.title for common
+ .title{
+        height:@discounttitleHeight;
+        margin-top:4px;
+        padding-left:10px;
+        background-image:linear-gradient(
+            180deg,
+            #ffaf47,
+            #ff9000
+       );
+       a{
+           display:block;
+           height:@allHeight;
+           line-height:@discounttitleHeight;
+       }
+        .recomend{
+            color:#fff;
+            float:left;
+        }
+        .morecom{
+            float:right;
+            margin-right:10px;
+            img{
+                height:20px;
+            }
+        }
+    }
+.discount{   
+    .media{
+        padding:12px 8px;
+        margin:0;
+        border-bottom:1px solid #e0e0e0;
+        .media-object{
+            img{
+                width:100px;
+            }
+           
+        }
+        .media-body{
+            h4 {
+                font-size:16px;
+                word-break:break-all;
+                text-align:left;
+                font-weight:normal;
+                margin-bottom:50px;
+                span{
+                    color:#ff6c00;
+                    margin-left:4px;
+                }
+            }         
+        }
+        .other{
+            span{
+                color:#a1a1a1;
+                font-size:12px;
+            }
+            .mail{
+                float:left;
+            }
+            .commet{
+                float:right;
+            }
+        }
+        
+    }
+    .morebar{
+            height:@morebarHeight;
+            background-color:@morebarColor ;
+            padding:10px;
+            .boxSizing();
+            a{
+                border:1px solid #ddd;
+                display:block;
+                width:@allWidth;
+                height:@allHeight;
+                text-align:center;
+                line-height:30px;
+                color:#000;
+                border-radius:4px;
+            }
+        }
+}

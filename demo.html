@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			li{
+				height:30px;
+				border:1px solid #000;
+			}
+			table{
+				display:block;
+				height:0px;
+				overflow:hidden;
+			}
+			td{
+				display:inline-block;
+			}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li></li>
+			<table>
+				<tr>
+					<td>1</td>
+					<td>2</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>2</td>
+				</tr>
+			</table>
+			<li></li>
+		</ul>
+	</body>
+	<script src="./lib/zepo/zepto.min.js"></script>
+	<script>
+		var obj=[
+		{
+			title:1
+		},
+		{
+			title:2
+		}]
+		console.log($.each(obj,function(){
+			$.each(obj[i],function(){
+				
+			})
+		}));
+	</script>
+</html>

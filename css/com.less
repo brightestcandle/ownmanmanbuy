@@ -1,0 +1,122 @@
+//com
+@allWidth:100%;
+@allHeight:100%;
+.boxSizing{
+    -webkit-box-sizing: border-box;
+    box-sizing:border-box;
+}
+//header
+@headerHeight:50px;
+//search
+@searchHeight:50px;
+
+
+//color
+@headerColor:#ff841d;
+@searchbtnColor:#ff841d;
+@footerColor:#efefef;
+
+//header
+#header{
+    width:@allWidth;
+    height:@headerHeight;
+    background-color: @headerColor;
+    padding:12px;
+    border-bottom: 1px solid #e6e6e6;
+    .logo{
+          display:block;
+          float:left;
+          height:@allHeight;
+          img{
+              height:@allHeight;
+          }
+      } 
+    .app-down{
+        float:right;
+        height:@allHeight;
+        img{
+            height:@allHeight;
+        }
+    }
+}
+.search{
+    height:@searchHeight;
+    border-bottom: 1px solid #e6e6e6;
+    padding:10px;
+    font-size:0;
+    form{
+        height:@allHeight;
+        position:relative;
+    }
+    .searchtxt{
+        display:inline-block;
+        width:@allWidth;
+        height:@allHeight;
+        input{
+            width:@allWidth;
+            height:@allHeight;
+            padding-left:10px;
+            .boxSizing();
+            border:0;
+            background-color: #f1f1f1;
+            border-radius:15px;
+            font-size:16px;
+        }      
+    }
+    .subbtn{
+        display:inline-block;
+        width:63px;
+        height:@allHeight;
+        position:absolute;
+        right:0;
+        input{
+            width:@allWidth;
+            height:@allHeight;
+            border:none;
+            background-color: @searchbtnColor;
+            color:#fff;
+            line-height:30px;
+            font-size:16px;
+            border-radius:15px;
+        }
+    }
+}
+
+//footer
+#footer{
+    background-color: @footerColor;
+    padding-top:40px;
+    .foot-top{
+        border:1px solid #c4c4c4;
+        font-size:0;
+        margin-bottom:15px;
+        a{          
+            display:inline-block;
+            line-height:34px;
+            width:33.33%;
+            border-right:1px solid #c4c4c4;
+            font-size:14px;
+            text-align:center;
+            .boxSizing();
+        }
+        .backtop{
+            img{
+                height:14px;
+                vertical-align:middle;  
+                margin-top:-4px;
+            }
+        }
+    }
+    .foot-bottom{
+        p{
+            text-align:center;      
+            font-size:12px;    
+            color:#5a5a5a;  
+            margin-bottom:0px;
+            background-color: @footerColor;
+        }
+        .down{
+            color:red;
+        }
+    }
+}

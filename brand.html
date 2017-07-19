@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<!-- 视图窗口，移动端特属的标签。 -->
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no" />
+		<!-- 是否启动webapp功能，会删除默认的苹果工具栏和菜单栏。 -->
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<!-- 这个主要是根据实际的页面设计的主体色为搭配来进行设置。 -->
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<!-- 忽略页面中的数字识别为电话号码,email识别 -->
+		<meta name="format-detection" content="telephone=no, email=no" />
+		<!-- 启用360浏览器的极速模式(webkit) -->
+		<meta name="renderer" content="webkit">
+		<!-- 避免IE使用兼容模式 -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+		<meta name="HandheldFriendly" content="true">
+		<!-- 微软的老式浏览器 -->
+		<meta name="MobileOptimized" content="320">
+		<!-- uc强制竖屏 -->
+		<meta name="screen-orientation" content="portrait">
+		<!-- QQ强制竖屏 -->
+		<meta name="x5-orientation" content="portrait">
+		<!-- UC强制全屏 -->
+		<meta name="full-screen" content="yes">
+		<!-- QQ强制全屏 -->
+		<meta name="x5-fullscreen" content="true">
+		<!-- UC应用模式 -->
+		<meta name="browsermode" content="application">
+		<!-- QQ应用模式 -->
+		<meta name="x5-page-mode" content="app">
+		<!-- windows phone 点击无高光 -->
+		<meta name="msapplication-tap-highlight" content="no">
+		<link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="./css/base.css" />
+		<link rel="stylesheet" href="./css/com.css" />
+		<link rel="stylesheet" href="./css/brand.css" />
+		<title>慢慢买</title>
+	</head>
+
+	<body>
+		<!--1.header-->
+		<header id="header">
+			<a class="logo" href="http://m.manmanbuy.com/"><img src="./images/header_logo.png" alt="" /></a>
+			<a class="app-down"><img src="./images/header_app.png" alt="" /></a>
+		</header>
+		<!--2.search-->
+		<section class="search">
+			<form action="">
+				<div class="searchtxt">
+					<input type="search" class="search-in" placeholder="请输入你想比价的商品" />
+				</div>
+				<div class="subbtn">
+					<input type="submit" class="submit" value="搜索" />
+				</div>
+			</form>
+
+		</section>
+		<!--3.class-->
+		<section class="brand">
+			<ul class="list-group">
+			</ul>
+		</section>
+		<!--4.footer-->
+		<footer id="footer">
+			<div class="foot-top">
+				<a href="">登录</a>
+				<a href="">注册</a>
+				<a href="" class="backtop"><img src="./images/backtotop.jpg" alt="" />返回顶部</a>
+			</div>
+			<div class="foot-bottom">
+				<p>
+					<a href="" class="down">手机下载APP</a>
+					<a href="">慢慢买手机版</a>
+					-- 掌上比价平台
+				</p>
+				<p>m.manmanbuy.com </p>
+			</div>
+		</footer>
+	</body>
+	<script src="./lib/zepo/zepto.min.js"></script>
+	<script src="./js/fastclick.js"></script>
+	<script src="./js/handlebars-1.0.0.beta.6.js"></script>
+	<script src="./js/resetpage.js"></script>
+	<script src="./js/url.js"></script>
+	<script type="text/x-handlebars-template" id="bigTitle">
+		{{#each result}}
+		<li class="list-group-item" data-list="{{titleId}}">
+			<span class="glyphicon glyphicon-menu-down"></span>{{title}}
+		</li>
+		<table class="table table-bordered active">
+			<tbody>
+				<tr>
+					<td>家电</td>
+					<td>家电</td>
+					<td>家电</td>
+				</tr>
+			</tbody>
+		</table>
+		{{/each}}
+	</script>
+	<script type="text/x-handlebars-template" id="biglist">
+		{{#each result}}
+		<td>
+			<a href="./goodslist.html?data-list-id={{categoryId}}" data-list-id="{{categoryId}}">{{category}}</a>
+		</td>
+		{{/each}}
+	</script>
+	<script src="./js/brand.js"></script>
+
+</html>

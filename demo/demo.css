@@ -1,0 +1,25 @@
+.wrap,
+.bg,
+.cover {
+  width: 200px;
+  height: 200px;
+}
+.wrap {
+  position: relative;
+  background-color: blue;
+}
+.wrap:hover > .cover {
+  width: 300px;
+}
+.bg {
+  position: absolute;
+  left: 0;
+  background-color: pink;
+}
+.cover {
+  position: absolute;
+  left: 0;
+  background-color: yellow;
+  transition: all 1s;
+  opacity: 0;
+}

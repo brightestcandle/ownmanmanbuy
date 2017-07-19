@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="慢慢买，最低优惠">
+		<meta name="description" content="慢慢买，最低优惠">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<!-- 视图窗口，移动端特属的标签。 -->
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no" />
+		<!-- 是否启动webapp功能，会删除默认的苹果工具栏和菜单栏。 -->
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<!-- 这个主要是根据实际的页面设计的主体色为搭配来进行设置。 -->
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<!-- 忽略页面中的数字识别为电话号码,email识别 -->
+		<meta name="format-detection" content="telephone=no, email=no" />
+		<!-- 启用360浏览器的极速模式(webkit) -->
+		<meta name="renderer" content="webkit">
+		<!-- 避免IE使用兼容模式 -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+		<meta name="HandheldFriendly" content="true">
+		<!-- 微软的老式浏览器 -->
+		<meta name="MobileOptimized" content="320">
+		<!-- uc强制竖屏 -->
+		<meta name="screen-orientation" content="portrait">
+		<!-- QQ强制竖屏 -->
+		<meta name="x5-orientation" content="portrait">
+		<!-- UC强制全屏 -->
+		<meta name="full-screen" content="yes">
+		<!-- QQ强制全屏 -->
+		<meta name="x5-fullscreen" content="true">
+		<!-- UC应用模式 -->
+		<meta name="browsermode" content="application">
+		<!-- QQ应用模式 -->
+		<meta name="x5-page-mode" content="app">
+		<!-- windows phone 点击无高光 -->
+		<meta name="msapplication-tap-highlight" content="no">
+		<link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="./css/base.css" />
+		<link rel="stylesheet" href="./css/com.css" />
+		<link rel="stylesheet" href="./css/index.css" />
+		<link rel="stylesheet" href="./css/contract.css" />
+		<title>慢慢买</title>
+	</head>
+
+	<body>
+		<!--1.header-->
+		<header id="header">
+			<i class="glyphicon glyphicon-chevron-left"></i>
+			<h5>凑单品</h5>
+			<a class="app-down"><img src="./images/header_app.png" alt="" /></a>
+		</header>
+		<!--2.sec-->
+		<div class="sec">
+			<div class="selet">
+				<div class="dropdown clearfix">
+					<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        京东<span class="caret"></span>
+      				</button>
+					<ul class="dropdown-menu" aria-labelledby="dropdownMenu4">
+						<li>
+							<a href="#">Regular link</a>
+						</li>
+					</ul>
+				</div>
+				<div class="dropdown clearfix">
+					<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        华北<span class="caret"></span>
+      				</button>
+					<ul class="dropdown-menu" aria-labelledby="dropdownMenu4">
+						<li>
+							<a href="#">Regular link</a>
+						</li>
+					</ul>
+				</div>
+				<div class="dropdown clearfix">
+					<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        全部价格<span class="caret"></span>
+      				</button>
+					<ul class="dropdown-menu" aria-labelledby="dropdownMenu4">
+						<li>
+							<a href="#">Regular link</a>
+						</li>
+					</ul>
+				</div>			
+			</div>
+			<div class="search-icon glyphicon glyphicon-search"></div>
+		</div>
+		<!--3.goods-->
+		<ul class="goods container-fluid">
+			<li class="col-md-6 col-sm-6 col-xs-6">
+				<a href=""><img src="" alt="" /></a>
+				<div class="words">
+					<p>[京东超市]一楠，咖啡</p>
+					<div class="price">
+						<span id="priceNum">￥1.00</span><span id="buy" class="pull-right">去凑单</span>
+					</div>				
+				</div>
+			</li>
+			<li class="col-md-6 col-sm-6 col-xs-6">
+				<a href=""><img src="" alt="" /></a>
+				<div class="words">
+					<p>[京东超市]一楠，咖啡</p>
+					<div class="price">
+						<span id="priceNum">￥1.00</span><span id="buy" class="pull-right">去凑单</span>
+					</div>				
+				</div>
+			</li>
+			<li class="col-md-6 col-sm-6 col-xs-6">
+				<a href=""><img src="" alt="" /></a>
+				<div class="words">
+					<p>[京东超市]一楠，咖啡</p>
+					<div class="price">
+						<span id="priceNum">￥1.00</span><span id="buy" class="pull-right">去凑单</span>
+					</div>				
+				</div>
+			</li>
+			<li class="col-md-6 col-sm-6 col-xs-6">
+				<a href=""><img src="" alt="" /></a>
+				<div class="words">
+					<p>[京东超市]一楠，咖啡</p>
+					<div class="price">
+						<span id="priceNum">￥1.00</span><span id="buy" class="pull-right">去凑单</span>
+					</div>				
+				</div>
+			</li>
+		
+		</ul>
+	</body>
+	<script src="./js/jquery.min.js"></script>
+	<script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+</html>

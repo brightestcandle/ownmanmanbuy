@@ -1,0 +1,62 @@
+.boxSizing {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+nav {
+  position: relative;
+}
+nav .breadcrumb {
+  padding-right: 100px;
+  margin-bottom: 0;
+}
+nav .dropdown,
+nav .dropup {
+  position: absolute;
+  right: 10px;
+  top: 2px;
+}
+nav .dropdown .btn,
+nav .dropup .btn {
+  padding: 4px 18px;
+}
+.breadcrumb > li + li:before {
+  content: ">";
+}
+.media {
+  display: block;
+  height: 140px;
+  padding: 10px 8px;
+  border-bottom: 1px solid #C0C0C0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.media .media-left img {
+  width: 100px;
+  height: 100px;
+}
+.media .media-heading {
+  height: 50px;
+  font-size: 18px;
+}
+.media .media-body p {
+  color: #ed0000;
+  font-size: 18px;
+}
+.media .media-body .other {
+  color: #a1a1a1;
+  font-size: 12px;
+}
+.media .media-body .other span {
+  margin-right: 10px;
+}
+.page {
+  font-size: 0;
+  height: 50px;
+}
+.page > div {
+  width: 33.33333333%;
+  line-height: 50px;
+  display: inline-block;
+  font-size: 14px;
+  text-align: center;
+}

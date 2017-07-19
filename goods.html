@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="./css/base.css" />
+		<link rel="stylesheet" href="./css/com.css" />
+		<link rel="stylesheet" href="./css/goods.css" />
+		<title>慢慢买</title>
+	</head>
+
+	<body>
+		<header id="header">
+			<a class="logo" href="http://m.manmanbuy.com/"><img src="./images/header_logo.png" alt="" /></a>
+			<a class="app-down"><img src="./images/header_app.png" alt="" /></a>
+		</header>
+		<!--2.search-->
+		<section class="search">
+			<form action="">
+				<div class="searchtxt">
+					<input type="search" class="search-in" placeholder="请输入你想比价的商品" />
+				</div>
+				<div class="subbtn">
+					<input type="submit" class="submit" value="搜索" />
+				</div>
+			</form>
+		</section>
+		<!--3.nav-->
+		<nav>
+			<ol class="breadcrumb"></ol>
+			<div class="dropdown">
+				<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+   				 筛选
+  				</button>
+				<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+					<li>
+						<a href="#">价格</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<!--4.content-->
+		<div class="content">
+			<div class="title">
+			</div>
+			<div class="discuss">
+				<p class="top">网友评论 </p>
+				<div class="discussall"></div>
+			</div>
+			<div class="more">
+				<input type="button" class="lookmore" value="查看更多"/>
+			</div>			
+		</div>
+		<!---5.footer-->
+		<footer id="footer">
+			<div class="foot-top">
+				<a href="">登录</a>
+				<a href="">注册</a>
+				<a href="" class="backtop"><img src="./images/backtotop.jpg" alt="" />返回顶部</a>
+			</div>
+			<div class="foot-bottom">
+				<p>
+					<a href="" class="down">手机下载APP</a>
+					<a href="">慢慢买手机版</a>
+					-- 掌上比价平台
+				</p>
+				<p>m.manmanbuy.com </p>
+			</div>
+		</footer>
+	</body>
+	<script src="./js/jquery.min.js"></script>
+	<script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+	<script src="./js/handlebars-1.0.0.beta.6.js"></script>
+	<script type="text/javascript" src="./js/url.js"></script>
+	<script src="./js/goods.js"></script>
+	<script type="text/x-handlebars-templatep" id="navList">
+		{{#each result}}
+		<li>
+			<a href="#">全部分类</a>
+		</li>
+		<li>
+			<a href="./goodslist.html?data-list-id={{categoryId}}">{{category}}</a>
+		</li>
+		<li class="active"></li>
+		{{/each}}
+	</script>
+	<script type="text/x-handlebars-templatep" id="products">
+		{{#each result}}
+		<h5>{{productName}}</h5> {{{productImg}}}
+		<span class="icon">收藏</span>
+		<div class="menu">
+			<a href="javascript:;">比价购买</a>
+			<a href="javascript:;">产品参数</a>
+			<a href="javascript:;">评价</a>
+		</div>
+		{{{bjShop}}}
+		<p>实际售价以各网站列出的实施售价为准，我们提供的价格可能有数小时或数日的延迟</p>
+		{{/each}}
+	</script>
+	<script type="text/x-handlebars-templatep" id="discussall">
+		{{#each result}}
+			<div class="diswrap">
+				<div class="user-info"><span class="username">{{comName}}</span><span class="day">{{comTime}}</span></div>
+				<div class="profrom"><span class="buyfrom">{{comFrom}}</span></div>
+				<p class="discontent">{{comContent}}</p>
+				<a href="javascript:;" class="response">回复</a>
+			</div>
+			{{/each}}
+	</script>
+
+</html>

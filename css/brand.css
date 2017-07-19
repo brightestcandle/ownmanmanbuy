@@ -1,0 +1,45 @@
+.boxSizing {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.list-group {
+  margin-bottom: 0;
+}
+.list-group-item {
+  position: relative;
+  border-top: none;
+  margin-bottom: 0;
+  border-bottom: 1px solid #ddd;
+  background-color: #F2F2F2;
+}
+.list-group-item .glyphicon {
+  float: right;
+}
+.brand {
+  width: 100%;
+}
+.table-bordered {
+  width: 100%;
+  margin-bottom: 0;
+  background-color: #F9F9F9;
+  display: block;
+  height: 0px;
+  overflow: hidden;
+  transition: all 1s linear;
+  border: 0;
+}
+.table-bordered tbody {
+  display: block;
+  width: 100%;
+}
+.table-bordered tbody tr {
+  display: inline-block;
+  width: 100%;
+  font-size: 0;
+}
+.table-bordered tbody tr td {
+  display: inline-block;
+  width: 33.33%;
+  text-align: center;
+  font-size: 14px;
+}
